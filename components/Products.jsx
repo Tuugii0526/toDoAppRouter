@@ -4,7 +4,7 @@ export const Products=()=>{
  const {tasks}=useToDo()
  return (
     <div className="w-[200px] h-fit flex flex-col gap-4">
-      {tasks.map(task=><ToDoCard task={task}/>)}
+      {tasks.map(task=><ToDoCard key={task.id} task={task}/>)}
     </div>
  )
 }
